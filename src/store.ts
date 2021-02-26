@@ -49,12 +49,20 @@ export const store = createStore<State>({
       }
       const splitted = state.token.split("."); 
       const tokenInfo: TokenDTO = JSON.parse(atob(splitted[1]));
-
+    
       const time = new Date().getTime();
       const date = new Date(time);
     
-      const expiry = Date.parse(tokenInfo.expiryDate+" GMT");
+
+      let utcExpiry = tokenInfo.expiryDate.replace(" ", "T");
+      utcExpiry = utcExpiry + ".000+00:00";
+      //console.log("ExpiryDate: " + utcExpiry);
+
+      const expiry = Date.parse(utcExpiry);
       const now = Date.parse(date.toUTCString());
+
+      //console.log(expiry);
+      //console.log(now);
 
       if(now<expiry){
         return state.token;
