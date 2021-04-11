@@ -5,16 +5,16 @@ import ZoneDTO from '@/DTO/ZoneDTO';
 declare module '@vue/runtime-core' {
   // declare your own store states
   interface State {
-    token: string | null,
-    isTokenExpired: boolean,
-    zones: ZoneDTO[],
-    online: boolean,
-    message: string,
+    token: string | null;
+    isTokenExpired: boolean;
+    zones: ZoneDTO[];
+    online: boolean;
+    message: string;
   }
 
   // provide typings for `this.$store`
   interface ComponentCustomProperties {
-    $store: Store<State>
+    $store: Store<State>;
   }
 }
 

@@ -242,6 +242,7 @@ export default class UserController extends mixins( ZoneRestServices, UserRestSe
       }
       this.resetUserPassword(userDto)
           .then(response => {
+              console.log(response);
               this.passwordSuccess = true;
               setTimeout(() => { this.dismissPasswordModal() }, 1500);
           })
@@ -268,6 +269,7 @@ export default class UserController extends mixins( ZoneRestServices, UserRestSe
       }
       this.saveUser(userDto)
           .then(response => {
+            console.log(response);
             if(this.countryCode==""){
               this.savedZone = null;
             }else{

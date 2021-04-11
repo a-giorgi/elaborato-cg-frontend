@@ -83,6 +83,7 @@ export default class LoginController extends mixins(UserRestServices) {
     isButtonDisabled = false;
  
   mounted() {
+    //context required for material design to work
     const userField = MDCTextField.attachTo(this.$el.querySelector('#usertext')!);
     const pwdField = MDCTextField.attachTo(this.$el.querySelector('#passwordtext')!);
     console.log(this.$store.getters.userData);

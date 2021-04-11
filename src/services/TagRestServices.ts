@@ -1,4 +1,4 @@
-import { mixins, Vue } from 'vue-class-component';
+import { Vue } from 'vue-class-component';
 import axios, { Method } from 'axios';
 import TagDTO from '@/DTO/TagDTO';
 import {backendRestUrl, tagResourceUrl, backendTimeout} from '@/services/endpoints';

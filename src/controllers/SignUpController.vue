@@ -104,6 +104,7 @@ export default class SignUpController extends mixins(UserRestServices) {
     isButtonDisabled = false;
  
   mounted() {
+    //context required for material design to work
     const userField = MDCTextField.attachTo(this.$el.querySelector('#usertext')!);
     const mailField = MDCTextField.attachTo(this.$el.querySelector('#mailtext')!);
     const pwdField = MDCTextField.attachTo(this.$el.querySelector('#passwordtext')!);

@@ -38,6 +38,7 @@ export default class TagListController extends mixins(TagRestServices,InternetSe
       }).catch(error =>{
         if(this.verifyOnline()){
            this.$store.commit("sendMessage","Il backend sembra essere offline...<br> Riprova più tardi.");
+           console.log(error);
         }
       });
     }

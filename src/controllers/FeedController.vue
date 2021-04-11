@@ -363,6 +363,7 @@ export default class FeedController extends mixins(
       this.deleteFeed(this.feedId!)
       .then(response =>{ 
           this.feedsModified = true;
+          console.log(response);
           this.feedArray.splice(this.arrayFeedId!,1);
           this.dismissModal();
         })

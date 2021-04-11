@@ -192,6 +192,7 @@ export default class TagController extends mixins(TagRestServices, ResponsiveAda
         }else{
             this.deleteTag(this.tagId!).then(response =>{
                 console.log("Tag eliminato con successo");
+                console.log(response);
                 this.numericTags.splice(this.componentIndex!,1);
             }).catch(error => {
                 this.manageSubmitErrors(error);

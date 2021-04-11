@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { mixins, Options, Vue } from 'vue-class-component';
+import { mixins, Options } from 'vue-class-component';
 import SignUpController from '@/controllers/SignUpController.vue';
 import LoginController from '@/controllers/LoginController.vue';
 import ResponsiveAdapter from '@/utils/ResponsiveAdapter';

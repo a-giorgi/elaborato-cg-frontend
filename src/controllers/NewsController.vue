@@ -12,11 +12,9 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue, mixins } from 'vue-class-component';
-import { Watch } from 'vue-property-decorator';
+import { Options, mixins } from 'vue-class-component';
 import News from '@/components/News.vue';
 import NewsDTO from '@/DTO/NewsDTO';
-import axios from 'axios';
 import NewsRestServices from '@/services/NewsRestServices';
 import ResponsiveAdapter from '@/utils/ResponsiveAdapter';
 import InternetServices from '@/services/InternetServices';

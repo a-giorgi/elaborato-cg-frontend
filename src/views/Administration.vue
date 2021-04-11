@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue, mixins } from 'vue-class-component';
+import { Options, Vue} from 'vue-class-component';
 import FeedController from '@/controllers/FeedController.vue';
 import TagController from '@/controllers/TagController.vue'
 

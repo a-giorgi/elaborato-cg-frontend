@@ -1,6 +1,5 @@
 import { Vue } from 'vue-class-component';
-import axios, { Method } from 'axios';
-import ZoneDTO from '@/DTO/ZoneDTO';
+import axios from 'axios';
 import {backendRestUrl,zoneResourceUrl,backendTimeout} from '@/services/endpoints';
 
 

@@ -31,7 +31,6 @@
 
 <script lang="ts">
 import { Vue } from 'vue-class-component'
-import { Watch } from 'vue-property-decorator';
 export default class About extends Vue{
   mounted(){
     // document.querySelector('body').style.backgroundColor = "black";
